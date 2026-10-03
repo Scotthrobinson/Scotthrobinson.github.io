@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Embertide Privacy Policy</title><meta name="description" content="How Embertide handles your data: no accounts, no tracking, no servers.">
+<link rel="stylesheet" href="../../assets/style.css"></head>
+<body><header class="site"><div class="wrap"><a class="brand" href="../../embertide/"><span class="dot"></span>Embertide</a><nav><a href="../../embertide/">Overview</a><a href="../../embertide/privacy/" aria-current=page>Privacy</a><a href="../../embertide/terms/">Terms</a><a href="../../embertide/support/">Support</a></nav></div></header>
+<main><div class="wrap"><h1>Embertide Privacy Policy</h1>
+<p><strong>Effective date:</strong> October 3, 2026</p>
+<p>Embertide ("the app") is developed by Scott Robinson ("we," "us"). Embertide is a recovery-session tracker for sauna, cold plunge, and related heat and cold practices. This policy explains what data the app handles and, just as importantly, what it doesn't.</p>
+<h2>The short version</h2>
+<ul>
+<li><strong>No accounts.</strong> Embertide doesn't ask you to sign up, log in, or create a profile.</li>
+<li><strong>No ads, no analytics, no tracking, no data selling.</strong> We don't run advertising, analytics, or crash-reporting SDKs, and we don't sell or share your data with anyone.</li>
+<li><strong>Your data stays yours.</strong> Session history lives on your device and, if you use iCloud, in <em>your own</em> private iCloud database — not on a server we run or can see into.</li>
+<li><strong>We have no server.</strong> Embertide has no backend. There's no database of Embertide users anywhere that we operate.</li>
+</ul>
+<h2>What data the app handles, and where it lives</h2>
+<h3>Session data</h3>
+<p>Everything you log — sauna and cold plunge sessions, rounds, notes, feel and mood ratings, temperatures, photos you attach, custom protocols, facilities, and your weekly goals — is stored locally on your device using Apple's SwiftData framework.</p>
+<p>If you're signed in to iCloud on your device, this data also syncs through Apple's CloudKit to your <strong>private</strong> iCloud database, so it stays consistent across your iPhone and Apple Watch. Your private iCloud database can only be read by you; we don't have access to it, and it isn't shared with other Embertide users. You can stop syncing at any time in <strong>Settings → [your name] → iCloud</strong> on your device.</p>
+<h3>Apple Health</h3>
+<p>With your permission (requested the first time you start a session, not during onboarding), Embertide:</p>
+<ul>
+<li><strong>Reads:</strong> heart rate, resting heart rate, heart rate variability (HRV), water temperature, your existing workouts (to avoid creating duplicates when you enter a session manually), your date of birth (to suggest an age-based heart-rate ceiling), and your weight (for the sweat-loss estimate).</li>
+<li><strong>Writes:</strong> a workout record for each session (categorized as Mind &amp; Body), water temperature samples for cold-water rounds, hydration ("dietary water") samples when you log water after a heat session, and your weight when you enter it for the sweat-loss estimate.</li>
+</ul>
+<p>Health data is read and written directly through Apple's HealthKit framework, on your device. We never see it, transmit it to ourselves, or use it for anything other than displaying it back to you inside the app. Health data is never used for advertising or marketing. You can change or revoke Health access at any time in <strong>Settings → Privacy &amp; Security → Health → Embertide</strong> on your device.</p>
+<h3>Oura (optional)</h3>
+<p>If you choose to connect an Oura account (<strong>Settings → Integrations</strong> in the app), Embertide uses Oura's OAuth2 sign-in to get an access token, which is stored only in your device's Keychain — never sent to us, because there's nowhere for it to go; we have no server. With that token, the app reads two things directly from Oura's API, on your device:</p>
+<ul>
+<li>Heart rate data, used only as a fallback when Apple Health has no heart-rate samples for a manually entered session.</li>
+<li>Your daily readiness score, shown on the Today tab.</li>
+</ul>
+<p>This data is for display inside the app only — it's never written to Apple Health or sent anywhere else. You can disconnect Oura at any time from the same Settings screen, which deletes the stored token from your device's Keychain. Disconnecting in Embertide doesn't revoke Oura's own record of the authorization; you can also do that from your Oura account settings.</p>
+<p>Oura's handling of your data is governed by <a href="https://ouraring.com/privacy-policy">Oura's privacy policy</a>. Embertide is a client of Oura's API, not affiliated with Oura.</p>
+<h3>Other wearables (WHOOP, Garmin, Fitbit, etc.)</h3>
+<p>Embertide has no direct connection to these. If their own app syncs your heart rate or HRV into Apple Health, Embertide reads it the same way it reads any other Health data (see "Apple Health" above).</p>
+<h3>Notifications</h3>
+<p>Session reminders, the weekly-goal nudge, and the post-session hydration prompt are all <strong>local notifications</strong>, scheduled directly on your device by iOS. They don't involve a push notification service or any server of ours.</p>
+<h2>What we don't do</h2>
+<ul>
+<li>We don't require or collect your name, email, or any other account information.</li>
+<li>We don't run analytics, advertising, or third-party tracking SDKs of any kind.</li>
+<li>We don't sell, rent, or share your data with third parties.</li>
+<li>We don't use your Health or Oura data for anything other than showing it back to you in the app.</li>
+</ul>
+<h2>Data retention and deletion</h2>
+<p>Your data stays until you delete it.</p>
+<ul>
+<li><strong>On your device:</strong> deleting the app deletes its local data.</li>
+<li><strong>In iCloud:</strong> synced data stays in your iCloud account after the app is deleted. To remove it, go to <strong>Settings → [your name] → iCloud → Manage Account Storage</strong>, choose Embertide, and delete its data.</li>
+<li><strong>In Apple Health:</strong> to remove Health data Embertide has written, open the Health app and go to <strong>Profile → Apps → Embertide → Delete All Data</strong>.</li>
+<li><strong>Oura:</strong> disconnecting Oura removes the locally stored access token immediately.</li>
+</ul>
+<h2>Children's privacy</h2>
+<p>Embertide isn't directed at children, and we don't knowingly collect data from anyone under 13 (or the relevant minimum age in your jurisdiction). Because we don't collect any personal data on servers of our own, there is nothing we hold that could identify a user of any age.</p>
+<h2>Changes to this policy</h2>
+<p>If Embertide's data practices change — for example, if a future version adds an account system, a server component, or a new integration — this policy will be updated before that version ships, and the effective date above will change.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:Scott.Robinson.Apps@outlook.com">Scott.Robinson.Apps@outlook.com</a></p></div></main>
+<footer class="site"><div class="wrap">© 2026 Scott Robinson · <a href="mailto:Scott.Robinson.Apps@outlook.com">Scott.Robinson.Apps@outlook.com</a></div></footer>
+</body></html>
