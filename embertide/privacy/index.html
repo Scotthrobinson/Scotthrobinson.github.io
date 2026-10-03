@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Embertide Privacy Policy</title><meta name="description" content="How Embertide handles your data: no accounts, no tracking, no servers.">
+<title>Embertide Privacy Policy</title><meta name="description" content="How Embertide handles your data: no accounts, no tracking, no servers."><meta name="theme-color" content="#0d0e10">
+<link rel="icon" href="../img/favicon-64.png" type="image/png"><link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
 <link rel="stylesheet" href="../../assets/style.css"></head>
-<body><header class="site"><div class="wrap"><a class="brand" href="../../embertide/"><span class="dot"></span>Embertide</a><nav><a href="../../embertide/">Overview</a><a href="../../embertide/privacy/" aria-current=page>Privacy</a><a href="../../embertide/terms/">Terms</a><a href="../../embertide/support/">Support</a></nav></div></header>
-<main><div class="wrap"><h1>Embertide Privacy Policy</h1>
+<body><header class="site"><div class="wrap narrow"><a class="brand" href="../"><img src="../img/icon-256.png" alt="">Embertide</a><nav><a href="../">Overview</a><a href="../privacy/" aria-current=page>Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a></nav></div></header>
+<main class="doc"><div class="wrap narrow"><h1>Embertide Privacy Policy</h1>
 <p><strong>Effective date:</strong> October 3, 2026</p>
 <p>Embertide ("the app") is developed by Scott Robinson ("we," "us"). Embertide is a recovery-session tracker for sauna, cold plunge, and related heat and cold practices. This policy explains what data the app handles and, just as importantly, what it doesn't.</p>
 <h2>The short version</h2>
@@ -24,6 +25,8 @@
 <li><strong>Writes:</strong> a workout record for each session (categorized as Mind &amp; Body), water temperature samples for cold-water rounds, hydration ("dietary water") samples when you log water after a heat session, and your weight when you enter it for the sweat-loss estimate.</li>
 </ul>
 <p>Health data is read and written directly through Apple's HealthKit framework, on your device. We never see it, transmit it to ourselves, or use it for anything other than displaying it back to you inside the app. Health data is never used for advertising or marketing. You can change or revoke Health access at any time in <strong>Settings → Privacy &amp; Security → Health → Embertide</strong> on your device.</p>
+<h3>Location</h3>
+<p>With your permission, Embertide uses your device's location when you open the Start tab to recognize when you're at a saved facility (like your gym or home sauna) and default to it automatically, instead of you having to pick it every time. This check happens on your device: your current location is compared against the facility coordinates you've chosen to save, and the result never leaves your device. We don't track, store, or have access to a history of your location — only whichever facility coordinates you've explicitly saved. You can change or revoke location access at any time in <strong>Settings → Privacy &amp; Security → Location Services → Embertide</strong> on your device; the app works fully without it; you'll just need to pick your facility manually.</p>
 <h3>Oura (optional)</h3>
 <p>If you choose to connect an Oura account (<strong>Settings → Integrations</strong> in the app), Embertide uses Oura's OAuth2 sign-in to get an access token, which is stored only in your device's Keychain — never sent to us, because there's nowhere for it to go; we have no server. With that token, the app reads two things directly from Oura's API, on your device:</p>
 <ul>
@@ -57,5 +60,5 @@
 <p>If Embertide's data practices change — for example, if a future version adds an account system, a server component, or a new integration — this policy will be updated before that version ships, and the effective date above will change.</p>
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:Scott.Robinson.Apps@outlook.com">Scott.Robinson.Apps@outlook.com</a></p></div></main>
-<footer class="site"><div class="wrap">© 2026 Scott Robinson · <a href="mailto:Scott.Robinson.Apps@outlook.com">Scott.Robinson.Apps@outlook.com</a></div></footer>
+<footer class="site"><div class="wrap narrow"><span>© 2026 Scott Robinson</span><span class="links"><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a><a href="mailto:Scott.Robinson.Apps@outlook.com">Contact</a></span></div></footer>
 </body></html>

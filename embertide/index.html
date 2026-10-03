@@ -1,13 +1,235 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Embertide</title><meta name="description" content="Embertide: a sauna and cold plunge session tracker for iPhone and Apple Watch.">
-<link rel="stylesheet" href="../assets/style.css"></head>
-<body><header class="site"><div class="wrap"><a class="brand" href="../embertide/"><span class="dot"></span>Embertide</a><nav><a href="../embertide/" aria-current=page>Overview</a><a href="../embertide/privacy/">Privacy</a><a href="../embertide/terms/">Terms</a><a href="../embertide/support/">Support</a></nav></div></header>
-<main><div class="wrap"><section class="hero"><h1>Embertide</h1><p>Track sauna, cold plunge and contrast therapy sessions on iPhone and Apple Watch. No accounts, no ads, no tracking.</p></section>
-<div class="cards">
-<a class="card" href="privacy/"><strong>Privacy Policy</strong><span>What the app reads and writes, and where your data lives.</span></a>
-<a class="card" href="terms/"><strong>Terms of Service</strong><span>The rules for using Embertide, including health and safety notes.</span></a>
-<a class="card" href="support/"><strong>Support</strong><span>Common questions and how to contact us.</span></a>
-</div></div></main>
-<footer class="site"><div class="wrap">© 2026 Scott Robinson · <a href="mailto:Scott.Robinson.Apps@outlook.com">Scott.Robinson.Apps@outlook.com</a></div></footer>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Embertide: Sauna &amp; Cold Plunge Tracker for iPhone and Apple Watch</title>
+<meta name="description" content="Track sauna, steam and cold plunge sessions round by round on iPhone and Apple Watch. Weekly heat and cold goals, Apple Health integration, no accounts, no ads.">
+<meta name="theme-color" content="#0d0e10">
+<meta property="og:title" content="Embertide: Sauna & Cold Plunge">
+<meta property="og:description" content="Contrast therapy, tracked round by round. iPhone and Apple Watch. No accounts, no ads.">
+<meta property="og:image" content="https://scotthrobinson.github.io/embertide/img/icon-256.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site"><div class="wrap">
+  <a class="brand" href="./"><img src="img/icon-256.png" alt="">Embertide</a>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#privacy">Privacy</a>
+    <a href="support/">Support</a>
+  </nav>
+</div></header>
+
+<main>
+
+<!-- Hero -->
+<div class="hero"><div class="wrap">
+  <div>
+    <img class="hero-icon" src="img/icon-256.png" alt="Embertide app icon" width="84" height="84">
+    <p class="eyebrow">For iPhone &amp; Apple Watch</p>
+    <h1>Heat. Cold.<br><span class="grad">Repeat.</span></h1>
+    <p class="lede">Embertide tracks contrast therapy the way it actually works: a sequence of sauna, cold plunge and rest rounds. Log every round, hit your weekly heat and cold goals, and see it all in Apple Health.</p>
+    <div class="cta-row">
+      <!-- When the app is live: replace this with the official App Store badge linked to the listing. -->
+      <a class="btn btn-primary" href="#get" aria-label="Coming soon to the App Store">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        <span><small>Coming soon</small>App Store</span>
+      </a>
+      <a class="btn btn-ghost" href="#features">See features</a>
+    </div>
+    <p class="fineprint">Free · No account · No ads · No tracking</p>
+  </div>
+  <div class="phones" aria-hidden="true">
+    <div class="phone back"><img src="img/iphone-2-session-detail.webp" alt="" width="440" height="956"></div>
+    <div class="phone front"><img src="img/iphone-1-today.webp" alt="" width="440" height="956" fetchpriority="high"></div>
+  </div>
+</div></div>
+
+<!-- Gallery -->
+<section id="tour"><div class="wrap">
+  <div class="section-head">
+    <h2>Every round, mapped.</h2>
+    <p>Sessions are built from rounds, the same way you actually do them. A 15-minute sauna, a 3-minute plunge, a breather, and again.</p>
+  </div>
+  <div class="rounds" aria-label="Example session: heat, cold, rest rounds">
+    <span class="r-heat" style="flex:15"></span><span class="r-cold" style="flex:3"></span><span class="r-rest" style="flex:2"></span>
+    <span class="r-heat" style="flex:15"></span><span class="r-cold" style="flex:3"></span><span class="r-rest" style="flex:2"></span>
+    <span class="r-heat" style="flex:15"></span><span class="r-cold" style="flex:3"></span>
+  </div>
+  <div class="gallery">
+    <figure class="shot">
+      <div class="frame"><img src="img/iphone-1-today.webp" alt="Today screen with weekly heat, cold and session goal rings, streaks and personal bests" width="440" height="956" loading="lazy"></div>
+      <figcaption><strong>Build the habit</strong><span>Weekly heat and cold rings, streaks and personal bests.</span></figcaption>
+    </figure>
+    <figure class="shot">
+      <div class="frame"><img src="img/iphone-2-session-detail.webp" alt="Session detail listing each sauna, ice bath and hot tub round with temperature and feel rating" width="440" height="956" loading="lazy"></div>
+      <figcaption><strong>See every round</strong><span>Durations, temperatures and how each round felt.</span></figcaption>
+    </figure>
+    <figure class="shot">
+      <div class="frame"><img src="img/iphone-3-health-oura.webp" alt="Heart rate chart for a session with range, average and recovery" width="440" height="956" loading="lazy"></div>
+      <figcaption><strong>Heart rate in context</strong><span>From Apple Health, or Oura as a fallback.</span></figcaption>
+    </figure>
+    <figure class="shot">
+      <div class="frame"><img src="img/iphone-4-protocols.webp" alt="Start screen with protocols grouped by goal such as Wake Up and Focus and Muscle Recovery" width="440" height="956" loading="lazy"></div>
+      <figcaption><strong>Protocols for your goal</strong><span>Start from a preset or build your own.</span></figcaption>
+    </figure>
+  </div>
+</div></section>
+
+<!-- Watch -->
+<section class="band" id="watch"><div class="wrap">
+  <div class="section-head">
+    <h2>Built for wet hands.</h2>
+    <p>Leave your phone in the locker. The Apple Watch app runs a whole session without tiny touch targets.</p>
+  </div>
+  <div class="controls">
+    <div class="control">
+      <div class="ic"><svg class="i24" viewBox="0 0 24 24"><rect x="6" y="5" width="11" height="14" rx="3"/><path d="M19 10v4"/><path d="M9 2h5M9 22h5"/></svg></div>
+      <h3>Digital Crown</h3>
+      <p>Between rounds, turn the Crown to pick what's next: sauna, plunge or rest. Works on every Apple Watch.</p>
+    </div>
+    <div class="control">
+      <div class="ic"><svg class="i24" viewBox="0 0 24 24"><path d="M9 11V6a2 2 0 0 1 4 0v5"/><path d="M13 10a2 2 0 0 1 4 0v4a6 6 0 0 1-6 6h-.5A5.5 5.5 0 0 1 5 14.5V13a2 2 0 0 1 4 0"/></svg></div>
+      <h3>Double Tap</h3>
+      <p>Tap your finger and thumb together to end a round or start the next one. No screen touch needed.</p>
+      <span class="req">Series 9 and later, Ultra 2</span>
+    </div>
+    <div class="control">
+      <div class="ic"><svg class="i24" viewBox="0 0 24 24"><rect x="5" y="5" width="11" height="14" rx="3"/><path d="M19 8v3" stroke-width="3"/></svg></div>
+      <h3>Action Button</h3>
+      <p>Start a session with one press, straight from the watch face.</p>
+      <span class="req">Apple Watch Ultra</span>
+    </div>
+  </div>
+</div></section>
+
+<!-- Features -->
+<section id="features"><div class="wrap">
+  <div class="section-head">
+    <h2>Everything a recovery routine needs.</h2>
+    <p>Nothing it doesn't.</p>
+  </div>
+  <div class="features">
+    <div class="feature">
+      <div class="ic e"><svg class="i24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2.5"/></svg></div>
+      <h3>Live or manual</h3>
+      <p>Target timers with haptic alerts and live heart rate, or log a session afterward and Embertide fills in heart rate from Health.</p>
+    </div>
+    <div class="feature">
+      <div class="ic i"><svg class="i24" viewBox="0 0 24 24"><path d="M20.8 6.6a5 5 0 0 0-8.8-2 5 5 0 0 0-8.8 2C2.3 11 12 20 12 20s9.7-9 8.8-13.4Z"/></svg></div>
+      <h3>Apple Health</h3>
+      <p>Every session is saved as a Mind &amp; Body workout with each heat, cold and rest interval marked. No duplicate entries.</p>
+    </div>
+    <div class="feature">
+      <div class="ic e"><svg class="i24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/></svg></div>
+      <h3>Weekly goals</h3>
+      <p>Goal rings for heat and cold minutes, day and week streaks, and personal bests for your longest rounds.</p>
+    </div>
+    <div class="feature">
+      <div class="ic i"><svg class="i24" viewBox="0 0 24 24"><path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg></div>
+      <h3>Protocols</h3>
+      <p>Start with Classic Contrast, Finnish Longevity or Cold Beginner, or build and save your own routines.</p>
+    </div>
+    <div class="feature">
+      <div class="ic e"><svg class="i24" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="8" rx="4"/><circle cx="8" cy="12" r="1.5"/></svg></div>
+      <h3>Live Activity</h3>
+      <p>Round progress and timers on your Lock Screen and in the Dynamic Island.</p>
+    </div>
+    <div class="feature">
+      <div class="ic i"><svg class="i24" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6Z"/><path d="M12 9v4M12 16h.01"/></svg></div>
+      <h3>Safety features</h3>
+      <p>Duration warnings for each modality, an optional heart-rate ceiling alert, and hydration reminders after heat.</p>
+    </div>
+    <div class="feature">
+      <div class="ic e"><svg class="i24" viewBox="0 0 24 24"><path d="M4 19h16"/><path d="m5 15 4-5 4 3 6-7"/></svg></div>
+      <h3>Insights</h3>
+      <p>7, 30 and 90-day trends, and how your rounds correlate with how you felt.</p>
+    </div>
+    <div class="feature">
+      <div class="ic i"><svg class="i24" viewBox="0 0 24 24"><circle cx="9" cy="12" r="5"/><circle cx="16" cy="12" r="5"/></svg></div>
+      <h3>Wearables</h3>
+      <p>Heart rate, HRV and resting heart rate from Apple Watch or any device that syncs to Health, plus optional Oura readiness.</p>
+    </div>
+    <div class="feature">
+      <div class="ic e"><svg class="i24" viewBox="0 0 24 24"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg></div>
+      <h3>Your data, exportable</h3>
+      <p>Export your full session history as CSV whenever you want. Syncs across iPhone and Watch through your private iCloud.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- Goals -->
+<section class="band" id="goals"><div class="wrap">
+  <div class="section-head">
+    <h2>A weekly target to aim for.</h2>
+    <p>Embertide starts you on a popular weekly target. Change it any time.</p>
+  </div>
+  <div class="stats">
+    <div class="stat"><b class="e">57 min</b><span>of heat per week, by default</span></div>
+    <div class="stat"><b class="i">11 min</b><span>of cold per week, by default</span></div>
+    <div class="stat"><b>Your call</b><span>Fully adjustable goals, streaks and personal bests</span></div>
+  </div>
+</div></section>
+
+<!-- Modalities -->
+<section id="modalities"><div class="wrap">
+  <div class="section-head">
+    <h2>However you heat and chill.</h2>
+    <p>From a backyard barrel sauna to a lake in January.</p>
+  </div>
+  <div class="modes">
+    <div class="mode heat">
+      <h3><svg class="i24" viewBox="0 0 24 24" style="color:var(--ember)"><path d="M12 3c1 4 5 5.5 5 10a5 5 0 0 1-10 0c0-2.5 1.5-3.5 2-5 1 1.5 2 2 3 2-.5-2.5-.5-4.5 0-7Z"/></svg>Heat</h3>
+      <ul class="chips">
+        <li>Finnish sauna</li><li>Wood-fired sauna</li><li>Smoke sauna</li><li>Infrared sauna</li><li>Barrel sauna</li><li>Banya</li><li>Steam room</li><li>Hammam</li><li>Hot tub / onsen</li>
+      </ul>
+    </div>
+    <div class="mode cold">
+      <h3><svg class="i24" viewBox="0 0 24 24" style="color:var(--ice)"><path d="M12 2v20M4.9 7l14.2 10M4.9 17 19.1 7"/><path d="m9 4 3 2 3-2M9 20l3-2 3 2"/></svg>Cold</h3>
+      <ul class="chips">
+        <li>Cold plunge</li><li>Ice bath</li><li>Lake, river or ocean</li><li>Cold shower</li>
+      </ul>
+    </div>
+  </div>
+  <p class="rest-note">Plus rest rounds for ambient cool-downs between sets.</p>
+</div></section>
+
+<!-- Privacy -->
+<section id="privacy" style="padding-top:24px"><div class="wrap">
+  <div class="privacy-card">
+    <div>
+      <h2>Private by design.</h2>
+      <p>Embertide has no server. Your sessions live on your device and in your own private iCloud, which we can't see. Health data never leaves Apple's frameworks.</p>
+      <a href="privacy/">Read the privacy policy →</a>
+    </div>
+    <ul class="nos">
+      <li>No accounts</li><li>No ads</li><li>No analytics</li><li>No tracking</li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- Final CTA -->
+<div class="final" id="get"><div class="wrap">
+  <img src="img/icon-256.png" alt="" width="96" height="96" loading="lazy">
+  <h2>Make recovery a habit.</h2>
+  <p>Embertide is coming soon to the App Store for iPhone and Apple Watch.</p>
+  <div class="cta-row">
+    <a class="btn btn-ghost" href="mailto:Scott.Robinson.Apps@outlook.com?subject=Embertide">Questions? Get in touch</a>
+  </div>
+  <p class="disclaimer">Embertide is not a medical device and doesn't provide medical advice. Talk to your doctor before starting heat or cold therapy, and never cold-plunge alone in natural water.</p>
+</div></div>
+
+</main>
+
+<footer class="site"><div class="wrap">
+  <span>© 2026 Scott Robinson</span>
+  <span class="links"><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="support/">Support</a><a href="mailto:Scott.Robinson.Apps@outlook.com">Contact</a></span>
+</div></footer>
+
+</body>
+</html>
